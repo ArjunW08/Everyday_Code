@@ -1,12 +1,16 @@
 package Everyday_Code.JavaBasics;
 
+import java.util.Scanner;
+
 /*
  * If Statement
  * If-Else Statement
  * If-Else-If Statements
  * Nested If-Else Statements
  * Ternary Operator
- * Switch Statements
+ // (a > b) ? (a > c) ? System.out.println("A is largest") : System.out.println("C is Largest") : (b > c) ? System.out.println("B is Largest") : System.out.println("C is Largest"); 
+ // You Can't put print methods with ternary operators as it return's void.
+ * Switch Statements : If any case matches it will print all the cases below it if we do not put break statements.
  */
 
 public class ConditionalStatements {
@@ -37,7 +41,32 @@ public class ConditionalStatements {
             System.out.println("c is largest");
         }
 
-        // (a > b) ? (a > c) ? System.out.println("A is largest") : System.out.println("C is Largest") : (b > c) ? System.out.println("B is Largest") : System.out.println("C is Largest"); 
+
+        int max = (a > b) ? (a > c) ? a : c : (b > c) ? b : c;
+        System.out.println("Largest element : " + max);
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the day");
+        int day = sc.nextInt();
+        sc.close();
+
+        switch (day){
+            case 1:
+                System.out.println("Today is Sunday");
+                break;
+            case 2:
+                System.out.println("Today is Monday");
+                break;
+            case 3:
+                System.out.println("Today is Tuesday");
+                break;
+            case 4:
+                System.out.println("Today is Wednesday");
+                break;
+            default:
+                System.out.println("I consider it's Friday, weekend about to start.");
+        }
+
 
     }
 }
