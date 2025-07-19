@@ -1,5 +1,3 @@
-package Everyday_Code.JavaBasics;
-
 /*
  * Java Variables are case-sensitive
  * Variables must start with either a letter or an underscore, _ or a dollar, $ sign

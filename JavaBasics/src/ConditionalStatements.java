@@ -1,5 +1,3 @@
-package Everyday_Code.JavaBasics;
-
 import java.util.Scanner;
 
 /*

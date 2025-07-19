@@ -1,5 +1,3 @@
-package Everyday_Code.JavaBasics;
-
 /*
  * Arithmetic Operators
  * ==> +, -, *, /, %
