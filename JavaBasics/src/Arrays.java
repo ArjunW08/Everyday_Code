@@ -1,5 +1,5 @@
 public class Arrays {
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         /*
          * Array Declaration : 
          *  int[] arr;
@@ -42,6 +42,6 @@ public class Arrays {
 
         System.out.println("Minimum : " + min);
 
-        int[][] arr2d = new int[4][3];
+        // int[][] arr2d = new int[4][3];
     }
 }

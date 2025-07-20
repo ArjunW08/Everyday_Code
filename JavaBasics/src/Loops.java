@@ -7,7 +7,7 @@ public class Loops {
      * Break and Continue Statement can be used with loops.
     */
 
-    public static void main(String[] args) {
+    public static void main(Strings[] args) {
         int i = 0, j = 0;
         while(i < 5){
             System.out.println("Number : " + i);
