@@ -23,6 +23,7 @@ package Inheritance;
  * It is used to invoke a constructor of the immediate parent class.
  * 
  * This is a current object but super is not an object.
+ * This and Super cannot be used together.
  * 
  * Final Keyword : 
  * It is a non access modifier keyword which can never be changed in future.
