@@ -10,6 +10,25 @@ package Interfaces;
  * Here, the type can be 
  * 1. A superclass that an anonymous class extends.
  * 2. An interface that an anonymous class implements.
+ * 
+ * Functional Interfaces :
+ * An interface that contains exactly one abstract method is known as a functional interface.
+ * Functional 8 was introduced in Java 8 allows us to use lambda expression to initiate the interface's
+ * method and avoid using length codes for the anonymous class implementation.
+ * 
+ * Lambda Expression : 
+ * (int x) -> x + 1 Single declared-type argument.
+ * (int x) -> { return x+1;} Same as above
+ * (x) -> x + 1 Single inferred-type argument
+ * x -> x + 1 Parenthesis optional for single inferred-type case.
+ * 
+ * (String s) -> s.length() Single declared type argument.
+ * (Thread t) -> {t.start();} Single declared type argument.
+ * s -> s.length() Single inferred type argument.
+ * t -> { t.start(); } Single inferred type argument.
+ * 
+ * (int x, int y) -> x + y Multiple declared type parameters.
+ * (x,y) -> x+y Multiple inferred type parameters.
  */
 
 public class Classes {
@@ -28,6 +47,12 @@ public class Classes {
         inner_obj.price = 1;
 
         NestedClass nested_obj = new Classes.NestedClass();
+
+        Walkable walkable = (int steps) -> {
+            System.out.println("Walked " + steps + " steps.");
+        };
+
+        walkable.walks(10);
 
         
     };
@@ -50,6 +75,11 @@ public class Classes {
         }
     };
 
+    // Lambda Expression for funtional interface
+    SuperInterface obj3 = () -> {
+
+    };
+
 }
 
 class OuterClass {
@@ -58,6 +88,11 @@ class OuterClass {
     }
 }
 
+@FunctionalInterface
 interface SuperInterface {
     void interfaceMethod();
+}
+
+interface Walkable {
+    void walks(int steps);
 }
