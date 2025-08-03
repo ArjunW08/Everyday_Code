@@ -137,7 +137,7 @@ package Introduction;
  * 
  * Classes Implementing Set Interface : 
  * 1. EnumSet 
- * 2. HashSet
+ * 2. HashSet // Creates a unique hash of each element.
  * 3. LinkedHashSet
  * 4. TreeSet
  * 
@@ -150,6 +150,54 @@ package Introduction;
  * 6. clear() : removes all the elements from the set.
  * 7. size() : returns the length of the set.
  * 8. contains() : returns true if the set contains the specified element.
+ * 
+ * 
+ * Java Hashset :
+ * In Java, HashSet is commonly used if we have to access elements randomly.
+ * It is because elements in a hash table are accessed using hash codes.
+ * The hashcode of an element is a unique identity that helps to identify the 
+ * elements in a hash table.
+ * HashSet cannot contain duplicate elemets. Hence each hash set element has a unique hashcode.
+ * 
+ * Java HashSet of Custom Objects :
+ * When using Set and HashSet in Java, for the primitive types we can just use it
+ * without worry about how to implement the hashcode and the comparison logic.
+ * But when you want to use the Set with a custom class by putting custom objects
+ * into the set, that custom class has to implement the hashCode() and equals() methods in order 
+ * for the HashSet to work.
+ * 
+ * Java Map Interface : 
+ * In Java, elements of Map are stored in key/value pairs. Keys are unique values associated with 
+ * indivisual values. A map cannot contain duplicate keys. Ans, each key is associated with a single
+ * value.
+ * 
+ * Classes Implementing Map Interface : 
+ * 1. HashMap
+ * 2. TreeMap
+ * 3. EnumMap
+ * 4. LinkedHashMap
+ * 5. WeakHashMap
+ * 
+ * Methods of Map
+ * 1. put(K,V) : Inserting key/value pair
+ * 2. putAll() : Insert all entried from from a specified map to this map
+ * 3. putIfAbsent(K,V) : If key not associated with the value V
+ * 4. get(K) : Returns the value associated with the specified key K. 
+ * If the key is not found it retuens null.
+ * 5. getOrDefault(K, defaultValue) : Returns the value associated with specified key.
+ * If the key is not found, it returns the defaultValue.
+ * 6. containsKey(K) : Checks if the specified key K is present in the map or not.
+ * 7. conatinsValue(V) : Checks if the specified value V is present in the map or not.
+ * 8. replace(K,V) : Replace the value of the key K with the new specified value V.
+ * 9. replace(K, oldValue, newValue) : replaces the value of the key K with the new value
+ * only if the key K is associated with the value oldValue.
+ * 10. remove(K) : Removes the entry from the map represented by the key K.
+ * 11. remove(K,V) : Removes the entry from the map that has key K associated with the value V.
+ * 12. keySet() : Returns a set of all keys present in a map.
+ * 13. values() : Returns a set of all the values present in a map.
+ * 14. entrySet() : Returns a set of all the key/value mapping present in a map.
+ * 
+ * Key Value pair actually stored as an entry.
  */
 
 public class Intro {
